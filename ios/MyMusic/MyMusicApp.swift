@@ -315,7 +315,7 @@ struct SearchView: View {
             if query.isEmpty { ContentUnavailableView("Find your next listen",systemImage:"magnifyingglass",description:Text("Search tracks, artists, and albums.")) }
             else if results.isEmpty { ContentUnavailableView.search(text:query) }
             else { LazyVStack { ForEach(results) { TrackRow(track:$0,queue:results) } }.padding(.horizontal,20) }
-        }.background(Theme.background).navigationTitle("Search").searchable(text:$query,placement:.navigationBarDrawer(displayMode:.always),prompt:"Tracks, artists, albums")
+        }.background(Theme.background).navigationTitle("Search").toolbarTitleDisplayMode(.inlineLarge).searchable(text:$query,placement:.navigationBarDrawer(displayMode:.always),prompt:"Tracks, artists, albums")
     }
 }
 struct OfflineView: View {
@@ -351,7 +351,7 @@ struct OfflineView: View {
                     }
                 }
             }.padding(22)
-        }.background(Theme.background).navigationTitle("Downloads")
+        }.background(Theme.background).navigationTitle("Downloads").toolbarTitleDisplayMode(.inlineLarge)
     }
 }
 struct NowPlayingView: View {
@@ -457,6 +457,6 @@ struct SettingsView: View {
                 Text("SoundCloud downloads preserve the quality the artist or service provides. Compressed sources remain labeled as compressed.").font(.caption).foregroundStyle(Theme.muted)
             }
             Section { Text("MyMusic 0.1 · Your music. No subscription.").font(.caption).foregroundStyle(Theme.muted) }
-        }.scrollContentBackground(.hidden).background(Theme.background).navigationTitle("Settings")
+        }.scrollContentBackground(.hidden).background(Theme.background).navigationTitle("Settings").toolbarTitleDisplayMode(.inlineLarge)
     }
 }

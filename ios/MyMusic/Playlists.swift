@@ -112,7 +112,7 @@ struct PlaylistsView: View {
                         Button("Delete playlist",systemImage:"trash",role:.destructive) { deleting = playlist }
                     }
             }
-        }.scrollContentBackground(.hidden).background(Theme.background).navigationTitle("Playlists")
+        }.scrollContentBackground(.hidden).background(Theme.background).navigationTitle("Playlists").toolbarTitleDisplayMode(.inlineLarge)
             .toolbar(.visible,for:.navigationBar)
             .toolbar { Button("New playlist",systemImage:"plus") { creating = true }.accessibilityIdentifier("newPlaylist") }
             .sheet(isPresented:$creating) { PlaylistNameEditor(title:"New playlist") { playlists.create($0) } }
@@ -249,7 +249,7 @@ struct PlaylistSongPicker: View {
                         .accessibilityValue(selected.contains(track.id) ? "Selected" : "Not selected")
                 }
             }.scrollContentBackground(.hidden).background(Theme.background)
-                .searchable(text:$query,prompt:"Songs, artists, albums").navigationTitle("Add songs")
+                .searchable(text:$query,prompt:"Songs, artists, albums").navigationTitle("Add songs").toolbarTitleDisplayMode(.inlineLarge)
                 .toolbar {
                     ToolbarItem(placement:.cancellationAction) { Button("Cancel") { dismiss() } }
                 }
@@ -283,7 +283,7 @@ struct PlaylistDestinationPicker: View {
                         Label(playlist.name,systemImage:"music.note.list")
                     }
                 }
-            }.scrollContentBackground(.hidden).background(Theme.background).navigationTitle("Add to playlist")
+            }.scrollContentBackground(.hidden).background(Theme.background).navigationTitle("Add to playlist").toolbarTitleDisplayMode(.inlineLarge)
                 .toolbar {
                     ToolbarItem(placement:.cancellationAction) { Button("Cancel") { dismiss() } }
                     ToolbarItem(placement:.confirmationAction) { Button("New playlist") { creating = true } }
