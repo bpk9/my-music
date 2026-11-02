@@ -2,6 +2,14 @@
 
 A native iPhone music player for your own library. Stream original audio, save original files for the subway, and browse albums without a Plex subscription.
 
+<table>
+  <tr>
+    <td><img src="docs/screenshots/library-d916cd57.jpg" alt="Album library" width="300"></td>
+    <td><img src="docs/screenshots/downloads-5eaf8434.jpg" alt="Offline downloads" width="300"></td>
+    <td><img src="docs/screenshots/settings-366ea0a9.jpg" alt="Library and playback settings" width="300"></td>
+  </tr>
+</table>
+
 ## What works
 
 - Native SwiftUI album library, embedded/folder artwork, track/artist/album search, and local favorites.
