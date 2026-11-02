@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000015 /* MyMusic/MyMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000011 /* MyMusic/MyMusicApp.swift */; };
+		A00000000000000000000025 /* MyMusicUITests/MyMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000021 /* MyMusicUITests/MyMusicUITests.swift */; };
+B00000000000000000000006 = {isa = PBXBuildFile; fileRef = B00000000000000000000007; };
+C00000000000000000000029 = {isa = PBXBuildFile; fileRef = C00000000000000000000028; };
+F00000000000000000000000 = {isa = PBXBuildFile; fileRef = E00000000000000000000000; };
+F00000000000000000000001 = {isa = PBXBuildFile; fileRef = E00000000000000000000001; };
+F00000000000000000000002 = {isa = PBXBuildFile; fileRef = E00000000000000000000002; };
+F00000000000000000000003 = {isa = PBXBuildFile; fileRef = E00000000000000000000003; };
+F00000000000000000000004 = {isa = PBXBuildFile; fileRef = E00000000000000000000004; };
+F00000000000000000000005 = {isa = PBXBuildFile; fileRef = E00000000000000000000005; };
+F00000000000000000000006 = {isa = PBXBuildFile; fileRef = E00000000000000000000006; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A00000000000000000000029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000010;
+			remoteInfo = MyMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+D00000000000000000000001 = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config/Defaults.xcconfig; sourceTree = "<group>"; };
+		A00000000000000000000011 /* MyMusic/MyMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusic/MyMusicApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000012 /* MyMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000021 /* MyMusicUITests/MyMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusicUITests/MyMusicUITests.swift; sourceTree = "<group>"; };
+		A00000000000000000000022 /* MyMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+B00000000000000000000007 = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MyMusic/Assets.xcassets; sourceTree = "<group>"; };
+C00000000000000000000028 = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MyMusic/Connection.plist; sourceTree = "<group>"; };
+E00000000000000000000000 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusic/Models.swift; sourceTree = "<group>"; };
+E00000000000000000000001 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusic/API.swift; sourceTree = "<group>"; };
+E00000000000000000000002 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusic/Library.swift; sourceTree = "<group>"; };
+E00000000000000000000003 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusic/Player.swift; sourceTree = "<group>"; };
+E00000000000000000000004 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusic/Playlists.swift; sourceTree = "<group>"; };
+E00000000000000000000005 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusic/Sorting.swift; sourceTree = "<group>"; };
+E00000000000000000000006 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMusic/QueueView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000003 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000011 /* MyMusic/MyMusicApp.swift */,
+  B00000000000000000000007, C00000000000000000000028,
+				A00000000000000000000021 /* MyMusicUITests/MyMusicUITests.swift */,
+				A00000000000000000000004 /* Products */,
+D00000000000000000000001,
+E00000000000000000000000,E00000000000000000000001,E00000000000000000000002,E00000000000000000000003,E00000000000000000000004,E00000000000000000000005,E00000000000000000000006,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000012 /* MyMusic.app */,
+				A00000000000000000000022 /* MyMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000010 /* MyMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000013 /* Build configuration list for PBXNativeTarget "MyMusic" */;
+			buildPhases = (
+				A00000000000000000000014 /* Sources */,
+B00000000000000000000005,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyMusic;
+			productName = MyMusic;
+			productReference = A00000000000000000000012 /* MyMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000020 /* MyMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000023 /* Build configuration list for PBXNativeTarget "MyMusicUITests" */;
+			buildPhases = (
+				A00000000000000000000024 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000000028 /* PBXTargetDependency */,
+			);
+			name = MyMusicUITests;
+			productName = MyMusicUITests;
+			productReference = A00000000000000000000022 /* MyMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					A00000000000000000000010 = {
+						CreatedOnToolsVersion = 27.2;
+					};
+					A00000000000000000000020 = {
+						CreatedOnToolsVersion = 27.2;
+						TestTargetID = A00000000000000000000010;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000002 /* Build configuration list for PBXProject "MyMusic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000003;
+			productRefGroup = A00000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000010 /* MyMusic */,
+				A00000000000000000000020 /* MyMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000014 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000015 /* MyMusic/MyMusicApp.swift in Sources */,
+F00000000000000000000000,F00000000000000000000001,F00000000000000000000002,F00000000000000000000003,F00000000000000000000004,F00000000000000000000005,F00000000000000000000006,
+
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000025 /* MyMusicUITests/MyMusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+B00000000000000000000005 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (C00000000000000000000029,  B00000000000000000000006,); runOnlyForDeploymentPostprocessing = 0; };
+/* Begin PBXTargetDependency section */
+		A00000000000000000000028 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A00000000000000000000010 /* MyMusic */;
+			targetProxy = A00000000000000000000029 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A00000000000000000000005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00000000000000000000001;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A00000000000000000000006 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00000000000000000000001;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A00000000000000000000016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00000000000000000000001;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+INFOPLIST_FILE = MyMusic/Info.plist;
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "MyMusic";
+
+
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(UNDERTONE_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		A00000000000000000000017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00000000000000000000001;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+INFOPLIST_FILE = MyMusic/Info.plist;
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "MyMusic";
+
+
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(UNDERTONE_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A00000000000000000000026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00000000000000000000001;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(UNDERTONE_BUNDLE_ID).uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = MyMusic;
+			};
+			name = Debug;
+		};
+		A00000000000000000000027 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D00000000000000000000001;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(UNDERTONE_BUNDLE_ID).uitests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = MyMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000002 /* Build configuration list for PBXProject "MyMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000005 /* Debug */,
+				A00000000000000000000006 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000013 /* Build configuration list for PBXNativeTarget "MyMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000016 /* Debug */,
+				A00000000000000000000017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000023 /* Build configuration list for PBXNativeTarget "MyMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A00000000000000000000026 /* Debug */,
+				A00000000000000000000027 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000001 /* Project object */;
+}

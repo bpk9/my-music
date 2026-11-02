@@ -1,0 +1,33 @@
+name: Security checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  server:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1 # v6
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r server/requirements.lock pip-audit
+      - run: python -m unittest discover -s server -p test_app.py -v
+      - run: python -m pip_audit -r server/requirements.lock
+      - name: Reject private pairing and build files
+        run: |
+          python - <<'PY'
+          import subprocess
+          from pathlib import PurePosixPath
+          files = subprocess.check_output(['git', 'ls-files', '-z']).decode().split('\0')
+          private = {'Connection.plist', 'Local.xcconfig', '.env'}
+          forbidden = {'.pem', '.key', '.p12', '.pfx', '.mobileprovision', '.ipa'}
+          bad = [f for f in files if f and (
+              PurePosixPath(f).name in private or
+              PurePosixPath(f).suffix in forbidden or
+              (PurePosixPath(f).name.startswith('.env.') and PurePosixPath(f).name != '.env.example') or
+              any(p in {'artifacts', 'tls', 'state', 'xcuserdata'} or p.startswith('.build') for p in PurePosixPath(f).parts))]
+          if bad:
+              raise SystemExit('Private files must not be tracked: ' + ', '.join(bad))
+          PY
