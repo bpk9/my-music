@@ -59,14 +59,17 @@ struct RootView: View {
     }
     private var tabs: some View {
         TabView {
-            tabRoot(LibraryView()).tabItem { Label("Library",systemImage:"square.stack.fill") }
+            tabRoot(LibraryView(), titleInset:0).tabItem { Label("Library",systemImage:"square.stack.fill") }
             tabRoot(SearchView()).tabItem { Label("Search",systemImage:"magnifyingglass") }
             tabRoot(OfflineView()).tabItem { Label("Downloads",systemImage:"arrow.down.circle.fill") }
             tabRoot(SettingsView()).tabItem { Label("Settings",systemImage:"slider.horizontal.3") }
         }
     }
-    private func tabRoot<Content: View>(_ content: Content) -> some View {
+    private func tabRoot<Content: View>(_ content: Content, titleInset: CGFloat = 22) -> some View {
         NavigationStack { content }
+        // Align toolbar titles with MyMusic below the Library eyebrow.
+        .padding(.top,titleInset)
+        .background(Theme.background)
         .safeAreaInset(edge:.bottom,spacing:0) {
             // Older tab bars reserve their space inside each tab's content.
             if #unavailable(iOS 26.0) { miniPlayer }
